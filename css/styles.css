@@ -859,4 +859,5 @@ header .contact-text:focus {
 .close-btn-icon {
   width: 18px;
   height: 18px;
+  fill: #000000;
 }
