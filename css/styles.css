@@ -144,6 +144,10 @@ header .logo-upper {
   letter-spacing: 0.02em;
 
   text-decoration-line: none;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 /* ховер на линки страниц */
@@ -203,6 +207,10 @@ header .logo-upper {
   letter-spacing: 0.02em;
 
   text-decoration-line: none;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 /* ховер на контакты */
@@ -272,6 +280,10 @@ header .contact-text:focus {
   padding: 10px 32px;
   align-items: center;
   text-align: center;
+
+  transition-property: background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 /* активизация фона кнопки при нажатии */
@@ -449,13 +461,19 @@ header .contact-text:focus {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .team-info .icon-social {
   width: 20px;
   height: 20px;
   fill: #AFB1B8;
-  ;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .team-info .icon-link:hover,
@@ -519,6 +537,10 @@ header .contact-text:focus {
 
   border: 1px solid #AFB1B8;
   border-radius: 4px;
+
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .client-link .client-logo {
@@ -527,6 +549,9 @@ header .contact-text:focus {
 
   fill: #AFB1B8;
 
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .client-link:hover .client-logo,
@@ -632,6 +657,10 @@ header .contact-text:focus {
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .social-icon {
@@ -641,7 +670,8 @@ header .contact-text:focus {
 }
 
 
-.social-item:hover .social-link {
+.social-item:hover .social-link,
+.social-item:focus .social-link {
   background-color: #2196F3;
 }
 
@@ -681,8 +711,9 @@ header .contact-text:focus {
   border: 1px solid transparent;
   border-radius: 4px;
 
-
-
+  transition-property: background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 /* ховер на фильтр */
@@ -713,6 +744,9 @@ header .contact-text:focus {
   text-decoration-line: none;
   display: block;
 
+  transition-property: background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .gallery-content img {
@@ -764,17 +798,12 @@ header .contact-text:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-
-
-.gallery-content:hover .gallery-overlay::before,
-.gallery-content:hover .gallery-overlay-text {
-  opacity: 1;
-}
-
 .gallery-overlay {
   position: relative;
   display: flex;
   align-items: center;
+  overflow: hidden;
+
 }
 
 .gallery-overlay::before {
@@ -783,7 +812,11 @@ header .contact-text:focus {
   width: 100%;
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
-  opacity: 0;
+
+  transform: translateY(295px);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .gallery-overlay-text {
@@ -796,8 +829,18 @@ header .contact-text:focus {
   color: #FFFFFF;
   margin: 0;
   padding: 63px 24px;
-  opacity: 0;
+  transform: translateY(295px);
+
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
 }
+
+.gallery-content:hover .gallery-overlay::before,
+.gallery-content:hover .gallery-overlay-text {
+  transform: translateY(0);
+}
+
+
 
 
 /* ...модальное окно... */
