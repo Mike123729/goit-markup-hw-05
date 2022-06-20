@@ -886,8 +886,6 @@ header .contact-text:focus {
 }
 
 .close-modal {
-  /* background-color: #fff;
-  border-radius: 50%; */
   position: absolute;
   top: 8px;
   right: 8px;
@@ -897,8 +895,8 @@ header .contact-text:focus {
   align-items: center;
   justify-content: center;
   display: flex;
+  background-color: #fff;
   border-radius: 50%;
-  background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.1);
 
 }
