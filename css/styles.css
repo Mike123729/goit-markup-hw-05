@@ -852,6 +852,7 @@ header .contact-text:focus {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
+  visibility: visible;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
@@ -874,6 +875,7 @@ header .contact-text:focus {
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
+  visibility: visible;
   transition: opacity 600ms cubic-bezier(0.4, 0, 0.2, 1), transform 450ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   min-width: 528px;
